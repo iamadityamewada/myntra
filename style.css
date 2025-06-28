@@ -3,28 +3,33 @@
   padding: 0px;
   font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
 }
 
+
+/* ....................Header Styles..................................... */
 header {
-  background-color: aqua;
+  background-color: #fff;
   display: flex;
   height: 80px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
-.logo {
-  margin-left: 4%;
-}
+/* ........................logo.............. */
 
 .logo_img img {
   height: 50px;
   /* margin: 4%; */
 }
 
+/* ................navbar */
+
 .nav_bar {
   height: 80px;
-  min-width: 500px;
+  min-width: 420px;
+  width: 40%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -36,15 +41,25 @@ header {
   text-decoration: none;
   color: #282c3f;
   font-weight: 600;
+  border-bottom: 4px solid #fff;
+
+}
+
+.nav_item:hover{
+   border-bottom: 4px solid rgb(253, 24, 93)
 }
 
 .studio sup {
   color: red;
 }
 
+
+/* ...................search bar */
+
 .search_bar {
   height: 40px;
-  min-width: 150px;
+  min-width: 200px;
+  width: 30%;
   background-color: #f5f5f6;
   color: #696e79;
   border-radius: 5px;
@@ -63,4 +78,30 @@ header {
   flex-grow: 1;
   border: none;
   border-radius: 5px;
+}
+
+
+/* .................action bar */
+
+
+.action{
+    min-width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.action_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.action_icon{
+    height: 25px;
+    width: 25px;
+}
+
+.action_name{
+    font-size: 10px;
+    font-weight:600;
 }
